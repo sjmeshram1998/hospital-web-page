@@ -1,0 +1,285 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  /* bg */
+  .bg{
+    width: 100%;
+    /* background-image: url('../images/Banner1.jpg'); */
+    
+    height: 85vh;
+
+}
+.op{
+    opacity: 0.5;
+}
+.button-color {
+    background-color: #002b58;
+    color: white;
+    font-weight: 600;
+    
+}
+/* bg end */
+/* nav starts */
+.nav-link {
+    color: #082935;
+    padding: 0.6rem;
+    margin: 0.3rem;
+
+}
+li a:hover {
+    background-color: #009be0;
+    /* border: 2px solid #082935; */
+    border-radius: 5px;
+    font-weight: bold;
+    color: white !important;
+    border-radius: 8px;
+
+
+} 
+.dropdown-item {
+    color: #082935;
+}
+
+.active {
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* nav ends */
+
+
+.pd
+{
+    padding-left: 6rem;
+    padding-top: 8rem;
+    
+}
+.wt{
+font-weight: 700;
+}
+
+.all-heading{
+    color: #002b58;
+}
+.skyblue{
+    color: #009be0;
+   
+}
+.dk-blue{
+    font-weight: 800;
+    font-size: 45px;
+}
+.space{
+margin-top: 2rem;
+margin-bottom: 2rem;
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+/* about */
+#about {
+    padding-top: 2rem;
+    margin-top: 2rem;
+
+}
+.skyblu-bg{
+    background-color: #009be0;
+    color: white;
+    width: 100%;
+    /* height: 50vh; */
+}
+/* about end */
+
+/* caraousal */
+.caraousal-space{
+    height:85Vh;
+    
+  }
+
+  .carousel-control-next-icon{
+    background-image: url('../images/right-arrow.png');
+
+  }
+  .carousel-control-prev-icon{
+    background-image: url('../images/left-arrow.png');
+
+  }
+ .f-style{
+    font-size: 14px;
+    font-weight: normal;
+ }
+ .slider2 {
+    
+    display: none;
+}
+.slider1{
+display: block;
+}
+.clip-img {
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
+}
+.img-border{
+    border: 20px solid lightgoldenrodyellow;
+}
+
+.foot {
+   
+        margin-top: 2rem;
+        padding: 5rem;
+
+        
+}
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+/* animation starts */
+#dvImage {
+    animation: fadeBackground 7s;
+    /* animation-fill-mode: both; */
+    animation-iteration-count: infinite;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: #082935;
+    animation-direction: alternate;
+    
+  }
+
+  @keyframes fadeBackground {
+from {     background-image: url('../images/Banner1.jpg');
+}
+to {     background-image: url('../images/Banner2.jpg');
+}
+}
+/* animation ends */
+
+
+/* circle animation */
+.cls-1{
+    fill:#002b58;
+    
+        }
+.cls-2,.cls-3{
+    fill:#009be0;
+}
+.cls-3{
+    rotate:#fff;
+rotate-miterlimit:10;
+}
+
+circle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stroke 3s ease-out forwards;
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+/* circle animation ends */
+
+/* media queries */
+
+
+@media screen and (max-width: 319px) {
+    .pd{
+        padding-left: 2rem;
+        padding-top: 5rem;
+        /* text-align: center; */
+    }
+    .bg{
+        height: 100vh;
+       }
+       .caraousal-space {
+        height: auto;
+    }
+    .con-space {
+        padding: 0rem;
+    }
+    .slider2 {
+    
+        display: block;
+    }       
+    .slider1{
+        display: none;
+        }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .pd{
+        padding-left: 2rem;
+        padding-top: 5rem;
+        /* text-align: center; */
+    }
+    .bg{
+        height: 100vh;
+       }
+       .caraousal-space {
+        height: auto;
+    }
+    .con-space {
+        padding: 0rem;
+    }
+    .slider2 {
+    
+        display: block;
+    }
+    .slider1{
+        display: none;
+        }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .pd{
+        padding-left: 4rem;
+        padding-top: 7rem;
+    }
+    .caraousal-space {
+        height: auto;
+    }
+    .con-space {
+        padding: 0rem;
+    }
+    .slider2 {
+    
+        display: block;
+    }
+    .slider1{
+        display: none;
+        }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .pd{
+        padding-left: 10rem;
+        padding-top: 12rem;
+    }
+    .caraousal-space {
+        height: auto;
+    }
+    .con-space {
+        padding: 0rem;
+    }
+   
+    .slider2 {
+    
+        display: block;
+    }
+    .slider1{
+        display: none;
+        }
+}
